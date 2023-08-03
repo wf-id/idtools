@@ -1,0 +1,65 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# idtools
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of package `idtools` is to supply high level helper tools and functions for use for ID Research. Additional packages used for ID Research are likely to depend on the functions in this package.
+
+## Installation
+
+You can install the development version of idtools like so:
+
+``` r
+devtools::install_github('wf-id/idtools')
+```
+
+## Shorthand Example
+
+Using a shorthand function, `g()` instead of `dplyr::glimpse()`:
+
+```{r shorthand}
+library(idtools)
+
+#glimpse the mtcars dataset with shorthand
+
+g(mtcars)
+
+
+```
+
+
+## Template Example
+
+Using the `generate_template()` function:
+
+```{r template}
+library(idtools)
+
+#create a temp file that uses glue syntax for demonstration
+tmp <- tempfile()
+writeLines("My birthday is in the month of {my_month}", con = tmp)
+my_month <- "March"
+
+
+#read in a template file with glue syntax
+out <- generate_template(tmp)
+
+print(out)
+
+
+```
