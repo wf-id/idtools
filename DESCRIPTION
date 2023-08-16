@@ -1,10 +1,13 @@
 Package: idtools
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: ID Basic Helper Functions and Utilities
+Version: 0.0.1
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    c(person("Michael", "DeWitt", , "medewitt@wakehealth.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8940-1967")),
+      person("Jennifer", "Wenner", , "jwenner@wakehealth.edu", role = c("aut"),
+           comment = c(ORCID = "0009-0002-6708-8847")))
+Description: Supplies high level helper tools and functions for use for ID Research. 
+     Other ID packages are likely to depend on this package.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -13,4 +16,9 @@ Imports:
     dplyr,
     glue,
     here,
-    readr
+    magrittr,
+    readr,
+    janitor,
+    lubridate,
+    stringr,
+    scales
