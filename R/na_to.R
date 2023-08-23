@@ -6,7 +6,6 @@
 #' @param x a vector
 #' @param to value of length 1 to change \code{NA} values to, or a vector of same length as x where any \code{NA} values in x will be replaced with the corresponding values in the 'to' vector. Default \code{0}.
 #'
-#' @importFrom dplyr if_else
 #' @export
 #' @seealso [nan_to()], [inf_to()], [nonfinite_to()]
 na_to <- function(x, to = 0){
@@ -22,7 +21,6 @@ na_to <- function(x, to = 0){
 #' @param x a vector
 #' @param to value of length 1 to change \code{NaN} values to, or a vector of same length as x where any \code{Nan} values in x will be replaced with the corresponding values in the 'to' vector. Default \code{0}.
 #'
-#' @importFrom dplyr if_else
 #' @export
 #' @seealso [na_to()], [inf_to()], [nonfinite_to()]
 nan_to <- function(x, to = 0){
@@ -38,7 +36,6 @@ nan_to <- function(x, to = 0){
 #' @param x a vector
 #' @param to value of length 1 to change \code{Inf} and \code{-Inf} values to, or a vector of same length as x where any \code{Inf}/\code{-Inf} values in x will be replaced with the corresponding values in the 'to' vector. Default \code{0}.
 #'
-#' @importFrom dplyr if_else
 #' @export
 #' @seealso [na_to()], [nan_to()], [nonfinite_to()]
 inf_to <- function(x, to = 0){
@@ -54,7 +51,6 @@ inf_to <- function(x, to = 0){
 #' @param x a vector
 #' @param to value of length 1 to change non-finite values to, or a vector of same length as x where any non-finite values in x will be replaced with the corresponding values in the 'to' vector. Default \code{0}.
 #'
-#' @importFrom dplyr if_else
 #' @export
 #' @seealso [na_to()], [nan_to()], [inf_to()]
 nonfinite_to <- function(x, to = 0){

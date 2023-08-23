@@ -3,7 +3,6 @@
 #' @param x a string or number to be formatted as an MRN
 #' @param length length of the string to return; will be padded with leading zeros when the string length is less than this value. defaults is \code{9}
 #'
-#' @importFrom stringr str_pad
 #' @export
 #'
 #' @examples
@@ -25,7 +24,6 @@ format_mrn <- function(x, length = 9){
 #' @param pad_n if supplied, length is ignored. This is the number of 0s to pad on top of the longest character string. Example: if pad_n = 1 and the longest string contains 5 characters, all strings will be padded to a length of 5+1 = 6 characters.
 #' @param side which side of the string to pad with zero. default = \code{left}
 #'
-#' @importFrom stringr str_pad
 #' @export
 #'
 #' @examples

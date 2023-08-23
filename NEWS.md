@@ -5,6 +5,12 @@
 <!--- For many changes, use level 2 sections headers:                       --->
 <!---         e.g. breaking changes, new features, bug fixes, etc           --->
 
+# Changes in version 0.0.2
+
+* New function: `check_for_missing()` to force stop or print missing values when present.
+* New feature: `clean_excel_date()` now has a `verbose` argument set to `FALSE`.
+* Many function additions from legacy tools package
+
 # Changes in version 0.0.1
 
 * Functions for converting non-finite values

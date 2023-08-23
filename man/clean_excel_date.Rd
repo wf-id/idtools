@@ -4,12 +4,14 @@
 \alias{clean_excel_date}
 \title{Clean up excel date field}
 \usage{
-clean_excel_date(x, time = FALSE)
+clean_excel_date(x, time = FALSE, verbose = FALSE)
 }
 \arguments{
 \item{x}{a string to be formatted as a date}
 
 \item{time}{default \code{FALSE}, whether to return a dateime instead of date}
+
+\item{verbose}{default \code{FALSE} hides any warning messages from \code{janitor::excel_numeric_to_date()} and/or \code{lubridate::parse_date_time()}}
 }
 \value{
 a \code{Date} when \code{time=FALSE} or a \code{POSIXct} when \code{time=TRUE}

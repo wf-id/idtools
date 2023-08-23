@@ -6,7 +6,6 @@
 #' @param accuracy A number to round to. Use (e.g.) 0.01 to show 2 decimal places of precision.
 #'  If NULL, the default, uses a heuristic that should ensure breaks have the minimum number of
 #'  digits needed to show the difference between adjacent values.
-#'  @importFrom scales percent
 #'
 #' @export
 perc.table <- function(x, margin = NULL, accuracy = NULL){

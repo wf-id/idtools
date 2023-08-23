@@ -8,8 +8,6 @@
 #' @param envir environment to evaluate the \code{glue} expression. default
 #'    is \code{parent.frame()}.
 #'
-#' @importFrom glue glue
-#' @importFrom readr read_lines
 #' @return a character string of file contents
 #' @export
 generate_template <- function(template_path,

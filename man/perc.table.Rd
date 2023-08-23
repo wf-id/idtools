@@ -13,8 +13,7 @@ perc.table(x, margin = NULL, accuracy = NULL)
 
 \item{accuracy}{A number to round to. Use (e.g.) 0.01 to show 2 decimal places of precision.
 If NULL, the default, uses a heuristic that should ensure breaks have the minimum number of
-digits needed to show the difference between adjacent values.
-@importFrom scales percent}
+digits needed to show the difference between adjacent values.}
 }
 \description{
 like \code{prop.table()} but formats output as a percentage, much

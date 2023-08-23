@@ -1,6 +1,6 @@
 Package: idtools
 Title: ID Basic Helper Functions and Utilities
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     c(person("Michael", "DeWitt", , "medewitt@wakehealth.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-8940-1967")),
@@ -16,9 +16,17 @@ Imports:
     dplyr,
     glue,
     here,
-    magrittr,
     readr,
     janitor,
     lubridate,
     stringr,
-    scales
+    scales,
+    cli,
+    tidyr,
+    data.table,
+    fs,
+    httr,
+    jsonlite,
+    lazyeval,
+    rstudioapi,
+    yaml
