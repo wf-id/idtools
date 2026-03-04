@@ -5,6 +5,11 @@
 <!--- For many changes, use level 2 sections headers:                       --->
 <!---         e.g. breaking changes, new features, bug fixes, etc           --->
 
+
+# Changes in version 0.0.3
+
+* New function: `to_xlsx()` to write dataframe to an excel with typical table formatting.
+
 # Changes in version 0.0.2
 
 * New function: `check_for_missing()` to force stop or print missing values when present.
